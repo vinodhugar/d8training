@@ -1,0 +1,18 @@
+uuid: a2b89aa0-b01c-4525-a9c0-47c772d99bf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interest
+id: taxonomy_term.interest.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: interest
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

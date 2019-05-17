@@ -1,0 +1,8 @@
+weather-widget:
+  js:
+    - Assests/scripts/weather-widget.js : {}
+  css:
+    components:
+      Assests/styles/weather-widget.css : {} 
+  dependencies: 
+    - core/jquery

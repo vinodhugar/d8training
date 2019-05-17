@@ -1,0 +1,5 @@
+d8_custom.static_menu_link:
+  title: Static Content Menu
+  description: Manage your static content
+  parent: system.admin_config_system
+  route_name: d8_custom.static_content

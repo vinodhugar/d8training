@@ -1,0 +1,16 @@
+name: D8 Custom Theme
+description: Custom Theme For Drupal.
+author: ujjwal@gmail.com
+package: demo
+core: 8.x
+version: 8.1
+type: theme
+
+base theme: bartik
+
+regions:
+  header: Header
+  left_sidebar: Left Sidebar
+  right_sidebar: Right Sidebar
+  content: Content
+  footer: Footer

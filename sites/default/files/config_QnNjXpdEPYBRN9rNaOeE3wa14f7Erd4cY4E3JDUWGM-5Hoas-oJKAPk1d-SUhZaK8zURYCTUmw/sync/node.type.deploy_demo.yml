@@ -1,0 +1,18 @@
+uuid: 6c1d4b3a-b56a-43ea-bea3-8992a2d0a0e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Deploy Demo'
+type: deploy_demo
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

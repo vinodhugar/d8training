@@ -1,0 +1,53 @@
+d8_custom.static_content:
+  path: '/static-content'
+  defaults:
+    _controller: 'Drupal\d8_custom\controller\D8CustomController::staticContent'
+    _title: 'Static Content'
+  requirements:
+    _permission: 'access content'
+
+d8_custom.dynamic_content:
+  path: '/dynamic-content/{ujjwal}'
+  defaults:
+    _controller: 'Drupal\d8_custom\controller\D8CustomController::dynamicContent'
+    _title: 'Dynamic Content'
+  requirements:
+    _permission: 'access content'
+
+d8_custom.entity_content:
+  path: '/entity-content/{node}'
+  defaults:
+    _controller: 'Drupal\d8_custom\controller\D8CustomController::entityContent'
+    _title: 'Entity Content'
+    node: 1
+  requirements:
+    #_permission: 'access content'
+   # _custom_access: 'Drupal\d8_custom\controller\D8CustomController::entityAccessCheck'
+    _d8_entity_access_check: 'TRUE'
+
+
+d8_custom.anotherstatic_content:
+  path: '/another-static-content'
+  defaults:
+    _controller: 'Drupal\d8_custom\controller\D8CustomController::anothoerstaticContent'
+    _title: 'Another Static Content'
+  requirements:
+    _permission: 'access content'
+    
+d8_custom.simple_form:
+  path: '/form'
+  defaults:
+    _form: Drupal\d8_custom\Form\D8SimpleForm
+    _title: 'Register Form'
+  requirements:
+    _permission: 'access training content'
+    
+d8_custom.weather_form:
+  path: '/admin/weather-form'
+  defaults:
+    _form: Drupal\d8_custom\Form\D8WeatherConfigForm
+    _title: 'Register Form'
+  requirements:
+    _permission: 'access training content'
+
+    

@@ -1,0 +1,20 @@
+uuid: 4256cffe-b947-425c-b644-ec770e494db7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'translate article node'
+  - 'translate block_content'
+  - 'translate menu_link_content'
+  - 'translate page node'
+  - 'use text format restricted_html'

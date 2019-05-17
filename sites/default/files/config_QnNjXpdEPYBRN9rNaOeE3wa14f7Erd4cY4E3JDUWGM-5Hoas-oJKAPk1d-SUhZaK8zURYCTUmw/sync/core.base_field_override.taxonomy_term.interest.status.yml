@@ -1,0 +1,22 @@
+uuid: 76e498a8-eedd-4609-9248-dee7f888443e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interest
+id: taxonomy_term.interest.status
+field_name: status
+entity_type: taxonomy_term
+bundle: interest
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

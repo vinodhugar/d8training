@@ -1,0 +1,4 @@
+d8_custom.static_content_link: 
+  title: 'Permission to access the content'
+  description: 'Access the Content'
+  restrict access: TRUE

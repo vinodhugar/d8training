@@ -1,0 +1,30 @@
+<?php
+
+use Symfony\Component\EventDispatcher\Event;
+use Drupal\node\Entity\Node;
+use Drupal\d8_custom\Event\D8NodeinsertEvent;
+
+function d8_custom_theme()
+{
+	return [
+	  'weather_info' => [
+	    'variables' => [
+	      'temp' => NULL,
+	      'pressure' => NULL,
+	      'humidity' => NULL,
+	      'temp_min' => NULL,
+	      'temp_max' => NULL,
+	    ],
+	  ],
+	];
+}
+
+function d8_custom_node_insert(Node $node)
+{
+	$event_dispatcher = \Drupal::service('event_dispatcher');
+	$event = new D8NodeinsertEvent($node);
+	$event_dispatcher->dispatch(D8NodeinsertEvent::NODE_INSERT, $event);
+}
+
+?>
+	

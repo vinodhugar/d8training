@@ -1,0 +1,25 @@
+uuid: a5eab4e0-9af3-49a4-ac7c-e0ecf4106971
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:68a61914-e8c7-49d8-89f1-655c8b035edc'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: travel
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:68a61914-e8c7-49d8-89f1-655c8b035edc'
+settings:
+  id: 'block_content:68a61914-e8c7-49d8-89f1-655c8b035edc'
+  label: Travel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
